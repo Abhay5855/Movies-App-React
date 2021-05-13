@@ -1,20 +1,36 @@
 .row__images {
   width: 100%;
-  max-height: 250px;
+  max-height: 120px;
   object-fit: contain;
   margin-right: 10px;
   cursor: pointer;
 }
 
+.row__imagesLarger {
 
+     max-height:250px;
+     
+
+
+
+}
 
 .row__poster {
   display: flex;
   padding: 20px;
   overflow-y: hidden;
   overflow-x: scroll;
+  
 }
 
 .row__poster::-webkit-scrollbar {
   display: none;
+}
+
+.row {
+    margin-left: 15px;
+}
+
+.row__heading {
+    margin-left:15px;
 }
