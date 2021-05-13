@@ -21,6 +21,9 @@ function Rows({title, fetchUrl }) {
     fetchData();
   },[fetchUrl]);
 
+
+  console.log(movies);
+
   return (
     <div className="row">
 
