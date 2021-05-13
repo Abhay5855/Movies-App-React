@@ -1,11 +1,14 @@
 import "./App.css";
 import Rows from "./components/Rows";
 import requests from "./requests";
-
+import Banner from "./components/Banner"
 function App() {
   return (
     <>
+      
 
+
+      <Banner />
       
      
       <Rows
