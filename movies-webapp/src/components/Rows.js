@@ -22,8 +22,7 @@ function Rows({title, fetchUrl , isImageBigger}) {
   },[fetchUrl]);
 
 
-  console.log(movies);
-
+  
   return (
     <div className="row">
 
