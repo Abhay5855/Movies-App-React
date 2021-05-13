@@ -36,9 +36,7 @@ function Rows({title, fetchUrl }) {
           );
         })}
 
-        {/* {props.movies.map((movie) => (
-          <img className="row__images" src={movie.Poster} alt="movie"></img>
-        ))} */}
+       
       </div>
     </div>
   );
