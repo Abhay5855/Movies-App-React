@@ -6,12 +6,16 @@ function App() {
   return (
     <>
 
-       <h2>I am building Netflix Clone</h2>
-      <Rows title="Trending" fetchUrl={requests.fetchTrending} />
+      
+     
       <Rows
         title="Netflix Originals"
         fetchUrl={requests.fetchNetflixOriginals}
+        //making the image bigger this default to true so no need of = and {}
+        isImageBigger
       />
+
+      <Rows title="Trending" fetchUrl={requests.fetchTrending} />
       <Rows title="Top Rated" fetchUrl={requests.fetchTopRated} />
       <Rows title="Comedy" fetchUrl={requests.fetchComedyMovies} />
       <Rows title="Romance" fetchUrl={requests.fetchRomanceMovies} />
