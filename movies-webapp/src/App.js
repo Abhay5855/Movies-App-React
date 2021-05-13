@@ -1,44 +1,24 @@
 import "./App.css";
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Rows from "./components/Rows";
-// import Navbar from "./components/Navbar";
-// import Add from "./components/Add";
-import Input from "./components/Input"
-
-import { useState, useEffect } from "react";
+import requests from "./requests";
 
 function App() {
-  const [movies, setMovies] = useState([]);
-
-  const [searchMovies, setSearchMovies] = useState('');
-
-  console.log(searchMovies);
-
-  const getMovies = async () => {
-    const url = "http://www.omdbapi.com/?s='rocky'&apikey=e86e479e";
-
-    const response = await fetch(url);
-
-    const responseJson = await response.json();
-
-    setMovies(responseJson.Search);
-  };
-
-  useEffect(() => {
-    getMovies();
-  }, []);
-
   return (
     <>
 
-            <Input searchMovies={searchMovies}  setSearchMovies={setSearchMovies}  />
-           
-            <Rows  movies={movies} />
-         
+       <h2>I am building Netflix Clone</h2>
+      <Rows title="Trending" fetchUrl={requests.fetchTrending} />
+      <Rows
+        title="Netflix Originals"
+        fetchUrl={requests.fetchNetflixOriginals}
+      />
+      <Rows title="Top Rated" fetchUrl={requests.fetchTopRated} />
+      <Rows title="Comedy" fetchUrl={requests.fetchComedyMovies} />
+      <Rows title="Romance" fetchUrl={requests.fetchRomanceMovies} />
+      <Rows title="Horror" fetchUrl={requests.fetchHorrorMovies} />
+      <Rows title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
     </>
   );
-
-
 }
 
 export default App;
