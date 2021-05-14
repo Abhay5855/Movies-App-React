@@ -4,7 +4,7 @@ import requests from "./requests";
 import Banner from "./components/Banner"
 function App() {
   return (
-    <>
+    <div className="App">
       
 
 
@@ -24,7 +24,7 @@ function App() {
       <Rows title="Romance" fetchUrl={requests.fetchRomanceMovies} />
       <Rows title="Horror" fetchUrl={requests.fetchHorrorMovies} />
       <Rows title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
-    </>
+    </div>
   );
 }
 
