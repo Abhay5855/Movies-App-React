@@ -41,7 +41,7 @@ function Banner() {
 
         backgroundRepeat:"no-repeat",
 
-        opacity:"0.8",
+        opacity:"0.6",
       }}
     >
       <div className="banner__details">
@@ -55,8 +55,8 @@ function Banner() {
         <button>My List</button>
      </div>
            
-          <div className="banner__overview">
-          <p>{movie.overview}</p>
+          <div >
+          <p className="banner__overview">{movie.overview}</p>
           </div>
           
 

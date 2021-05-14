@@ -24,9 +24,20 @@
     height:80px;
     max-height: 150px;
     padding-bottom: 8vw;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    -webkit-line-clamp: 3;
     
 }
 
+
+.banner__overview > p {
+  
+    text-overflow: ellipsis;
+    overflow:hidden;
+    -webkit-line-clamp: 3;
+
+}
 .banner__buttons {
 
     height: 40px;
