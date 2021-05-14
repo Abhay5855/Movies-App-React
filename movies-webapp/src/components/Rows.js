@@ -41,7 +41,6 @@ function Rows({ title, fetchUrl, isImageBigger }) {
       if(trailerUrl){
         setTrailerUrl('')
       }else {
-
         movieTrailer(movie?.name || '')
         .then((url) => {
           const urlParams = new URLSearchParams(new URL(url).search)
@@ -50,11 +49,6 @@ function Rows({ title, fetchUrl, isImageBigger }) {
         .catch((error) => console.log(error))
       }
     }
-
-  
-
- 
-
   return (
     <div className="row">
       <h2 className="row__heading">{title}</h2>
